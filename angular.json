@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "EjercicioEnAngular"
+    }
+  },
+  "defaultProject": "EjercicioEnAngular",
+  "cli": {
+    "analytics": "4bc29d70-57b6-431c-a214-c77131d0cfb6"
+  }
 }

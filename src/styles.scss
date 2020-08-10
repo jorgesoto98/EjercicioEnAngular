@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body,
+form {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+textarea,
+select,
+input,
+div,
+li,
+button {
+  outline: none;
+}
+
+body,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+a {
+  margin: 0;
+  padding: 0;
+}
