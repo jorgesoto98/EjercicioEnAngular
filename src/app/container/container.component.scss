@@ -1,3 +1,7 @@
+$desktop: 1200px;
+$laptop: 940px;
+$tablet: 768px;
+$phone: 480px;
 
 #frame-1{
   width: 100%;
@@ -85,7 +89,7 @@
         font-size: 24px;
         text-align: center;
       }
-      img{
+      .card-img{
         margin-bottom: 30px;
       }
 
@@ -234,7 +238,7 @@
   width: 100%;
   background-color: #F2F6FA;
   .footer-linebreak{
-    width: 1026px;
+    width: 88%;
     height: 1px;
     margin-top: 0;
     border: 1px solid #E4E6EB;
