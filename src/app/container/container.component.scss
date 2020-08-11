@@ -1,8 +1,3 @@
-$desktop: 1200px;
-$laptop: 940px;
-$tablet: 768px;
-$phone: 480px;
-
 #frame-1{
   width: 100%;
   display: flex;
@@ -18,10 +13,25 @@ $phone: 480px;
     align-items: center;
 
     .text {
+      height: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
+      margin: 0 5%;
+      .title{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 52px;
+      }
+      .subtitle{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 25px;
+        margin-bottom: 5%;
+      }
       .btn{
         background-color: #0096F0;
         color: #FFFFFF;
@@ -41,9 +51,81 @@ $phone: 480px;
       }
     }
   }
+
+
+  //Computer and Tablet
+  @media screen and (max-width: 902px) {
+    #frame-1{
+      height: auto;
+    }
+
+    .container{
+      width: 100%;
+      height: auto;
+      flex-wrap: wrap;
+      margin-bottom: 5%;
+      flex-direction: column;
+      .text{
+        margin: 5% 5%;
+        width: 400px;
+        .subtitle{
+          font-size: 16px;
+          margin-bottom: 1%;
+          line-height: 19.2px;
+        }
+        .title{
+          font-size: 30px;
+          line-height: 35px;
+        }
+        .btn{
+          margin-top: 2%;
+        }
+      }
+
+      .img{
+        .celular{
+          width: 338px;
+          height: auto;
+          margin: 0 7%;
+        }
+      }
+
+    }
+  }
+
+  //Phone
+  @media screen and (max-width: 400px) {
+    #frame-1{
+      height: auto;
+    }
+
+    .container {
+      width: 100%;
+      height: auto;
+
+      .text{
+        width: 70%;
+        .title{
+          font-size: 27px;
+          line-height: 28px;
+        }
+        .subtitle{
+
+        }
+      }
+
+      .img {
+        .celular {
+          width: 238px;
+          height: auto;
+          margin: 0 7%;
+        }
+      }
+    }
+  }
 }
 
-#frame-2{
+#frame-2 {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -51,26 +133,27 @@ $phone: 480px;
   flex-direction: column;
   background-color: #FFFFFF;
 
-  .tittle-container{
+  .tittle-container {
     width: 100%;
     text-align: center;
-    margin-top: 100px;
-    .card-list-title{
+    margin-top: 10%;
+    .card-list-title {
       font-size: 34px;
-      text-align: center;
+      margin: 0 5%;
     }
   }
 
   .card-list {
     max-width: 900px;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin: 5%;
 
-    .card{
+    .card {
       display: flex;
       height: 230px;
       width: 225px;
@@ -79,20 +162,28 @@ $phone: 480px;
       justify-content: center;
       align-items: center;
 
-      .card-text{
+      .card-text {
         font-size: 14px;
         text-align: center;
         margin-bottom: 10px;
       }
 
-      .card-title{
+      .card-title {
         font-size: 24px;
         text-align: center;
       }
-      .card-img{
+      .card-img {
         margin-bottom: 30px;
       }
 
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .tittle-container{
+      .card-list-title {
+        font-size: 27px;
+      }
     }
   }
 }
@@ -127,13 +218,13 @@ $phone: 480px;
     }
     .title{
       text-align: center;
-      width: 686px;
-      margin-top: 69px;
-      margin-bottom: 40px;
+      max-width: 686px;
       font-style: normal;
       font-weight: 500;
       font-size: 48px;
       line-height: 52px;
+      margin: 100px 5% 40px 5%
+
     }
   }
 
@@ -151,24 +242,73 @@ $phone: 480px;
       margin-bottom: 100px;
     }
     .subtitle{
+
       font-style: normal;
       font-weight: 500;
       font-size: 21px;
       line-height: 25px;
       text-align: center;
-      margin-bottom: 40px;
-      margin-top: 100px;
+
+      margin: 100px 5% 40px 5%
     }
     .text{
+      max-width: 780px;
       font-style: normal;
       font-weight: 500;
       font-size: 34px;
       line-height: 38px;
       text-align: center;
       letter-spacing: 0.5px;
+
+      margin: 0 7%;
       margin-bottom: 40px;
     }
   }
+
+  //Computer & Tablet
+  @media screen and (max-width: 902px) {
+    .title-container{
+      .title{
+        display: flex;
+        font-size: 36px;
+        line-height: 52px;
+        flex-wrap: wrap;
+      }
+    }
+
+    .subtitle-container{
+      .subtitle{
+        display: flex;
+        font-size: 16px;
+        line-height: 25px;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  //Phone
+  @media screen and (max-width: 400px ) {
+    .title-container{
+      .title{
+        font-size: 32px;
+        line-height: 37px;
+        flex-wrap: wrap;
+      }
+    }
+
+    .subtitle-container{
+      .subtitle{
+        font-size: 24px;
+        flex-wrap: wrap;
+      }
+      .text{
+        font-size: 24px;
+        line-height: 25px;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
 }
 
 #frame-4{
@@ -192,13 +332,12 @@ $phone: 480px;
     }
 
     .text{
-      width: 386px;
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
       line-height: 21px;
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 5%;
     }
 
     .img{
@@ -213,30 +352,30 @@ $phone: 480px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 120px;
+    margin-bottom: 10%;
 
     .email{
       border-radius: 15px;
       border: none;
       background-color: #FFFFFF;
-      width: 340px;
-      height: 30px;
+      width: 30%;
+      height: auto;
     }
     .btn{
-      width: 120px ;
-      height: 30px;
+      width: 20% ;
+      height: auto;
       border-radius: 20px;
       border: none;
       background-color:  #0096F0;
       color: #FFFFFF;
     }
   }
-
 }
 
 #footer{
   width: 100%;
   background-color: #F2F6FA;
+
   .footer-linebreak{
     width: 88%;
     height: 1px;
@@ -249,19 +388,35 @@ $phone: 480px;
     align-items: center;
     justify-content: space-between;
     .text{
-      margin: 35px 0 31px 84px;
+      margin: 5%;
     }
     .social{
       display: flex;
       justify-content: space-between;
-      margin-right: 71.11px;
       border: none;
+      margin: 5%;
       .instagram{
         display: flex;
       }
       .facebook{
         display: flex;
         margin-right: 21.8px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 400px ){
+    .footer-container{
+      flex-direction: column;
+      .text{
+        order: 1;
+        font-size: 12px;
+        text-align: center;
+
+      }
+      .social{
+        order: 0;
+        margin-top: 4%;
       }
     }
   }
